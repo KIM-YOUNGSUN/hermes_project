@@ -45,7 +45,7 @@ $logoWhite: #{$imgPath}+'hermes_logo.svg';
           & .menu_btn { 
             width: 40px; height: 100%;
             margin: auto;
-            background-image: url(../../../img/menu.png);
+            background-image: url(../../img/menu.png);
             background-repeat: no-repeat;
             background-position: 50% 50%;
           }
@@ -79,7 +79,7 @@ $logoWhite: #{$imgPath}+'hermes_logo.svg';
         }
           @at-root .search_btn  {
             width: 40px; height: 100%;
-            background-image: url(../../../img/search.png);
+            background-image: url(../../img/search.png);
             background-repeat: no-repeat;
             background-position: 50% 50%;
           }
@@ -109,7 +109,7 @@ $logoWhite: #{$imgPath}+'hermes_logo.svg';
         
           @at-root .language_part {
             width: 40px; height: 100%; 
-            background-image: url(../../../img/internet.png);
+            background-image: url(../../img/internet.png);
             background-repeat: no-repeat;
             background-position: 50% 50%;
               &  span {@include blind;}
@@ -131,7 +131,7 @@ $logoWhite: #{$imgPath}+'hermes_logo.svg';
           }
           @at-root .login_part {
             width: 40px; height: 100%; 
-            background-image: url(../../../img/user.png);
+            background-image: url(../../img/user.png);
             background-repeat: no-repeat;
             background-position: 50% 50%;
               &  span {@include blind;}
@@ -270,7 +270,7 @@ $logoWhite: #{$imgPath}+'hermes_logo.svg';
             & .menu_btn { 
               width: 50px; height: 50px;              
               margin-top: 6px; 
-              background-image: url(../../../img/menu.png);
+              background-image: url(../../img/menu.png);
               background-repeat: no-repeat;
               background-position: 50% 50%; 
             }
@@ -316,7 +316,7 @@ $logoWhite: #{$imgPath}+'hermes_logo.svg';
       
           @at-root .cart_btn {
             width: 50px; height: 60px;
-            background-image: url(../../../img/bag.png); 
+            background-image: url(../../img/bag.png); 
             background-repeat: no-repeat;
             background-position: 50% 50%;
 
@@ -456,7 +456,7 @@ $logoWhite: #{$imgPath}+'hermes_logo.svg';
         & .menu_btn {
         width: 50px; height: 24px;
         padding-top: 58px;
-        background-image: url(../../../img/menu.png);
+        background-image: url(../../img/menu.png);
         background-repeat: no-repeat;
         background-position: 50% 50%;}
         
@@ -503,7 +503,7 @@ $logoWhite: #{$imgPath}+'hermes_logo.svg';
   
       @at-root .cart_btn {
         width: 50px; height: 60px;
-        background-image: url(../../../img/bag.png); 
+        background-image: url(../../img/bag.png); 
         background-repeat: no-repeat;
         background-position: 50% 50%;
           & a {display: block; width: 100%; height: 100%;}
@@ -644,7 +644,7 @@ $logoWhite: #{$imgPath}+'hermes_logo.svg';
       & .menu_btn {
       width: 50px; height: 24px;
       padding-top: 58px;
-      background-image: url(../../../img/menu.png);
+      background-image: url(../../img/menu.png);
       background-repeat: no-repeat;
       background-position: 50% 50%; }
       
