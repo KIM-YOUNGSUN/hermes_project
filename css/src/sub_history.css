@@ -983,7 +983,7 @@
 @media all and (max-width: 767px) {
   #historyBox {
     width: 100%;
-    height: 1200px;
+    height: 800px;
     padding-top: 100px;
   }
   #historyBox h2 {
@@ -993,7 +993,7 @@
     padding-top: 7px;
     text-align: center;
     text-transform: uppercase;
-    font-size: 14px;
+    font-size: 18px;
     background-color: #ffffff;
   }
   .history_part {
@@ -1010,30 +1010,15 @@
     width: 1500px;
     height: 400px;
   }
+  #historyBox .history_area div {
+    width: 100%;
+    height: auto;
+  }
   li {
     width: 100%;
     height: 200px;
+    margin-top: 30px;
     text-align: center;
-  }
-  li dl {
-    width: 300px;
-    height: auto;
-    margin-top: 20px;
-  }
-  li dl dt {
-    width: 200px;
-    height: 40px;
-    margin: auto;
-    line-height: 40px;
-    font-size: 12px;
-  }
-  li dl dd {
-    width: 300px;
-    height: 100px;
-    margin: auto;
-    padding: 15px;
-    font-size: 6px;
-    line-height: 20px;
   }
   .history_inner_01 {
     background-image: url(../../img/hermes/history_01.jpg);
@@ -1076,10 +1061,32 @@
     height: 100%;
   }
 
+  #historyBox dl {
+    width: 300px;
+    height: auto;
+    margin-top: 30px;
+  }
+  #historyBox dl dt {
+    width: auto;
+    height: 40px;
+    margin: auto;
+    line-height: 30px;
+    font-size: 15px;
+    font-weight: bold;
+    text-align: center;
+  }
+  #historyBox dl dd {
+    width: auto;
+    height: 100px;
+    font-size: 13px;
+    line-height: 20px;
+    text-align: center;
+  }
   #historyBox .indicatorBox {
     width: 100px;
     height: 30px;
     margin: auto;
+    margin-top: -50px;
   }
   #historyBox .indicatorBox ul {
     display: flex;
@@ -1102,9 +1109,8 @@
 @media all and (min-width: 768px) and (max-width: 1279px) {
   #historyBox {
     width: 100%;
-    height: 1300px;
+    height: auto;
     padding-top: 150px;
-    background-color: #fff;
   }
   #historyBox h2 {
     width: 100%;
@@ -1117,66 +1123,45 @@
     background-color: #ffffff;
   }
   .history_part {
-    width: 700px;
-    height: 800px;
-    margin: auto;
-    overflow: hidden;
+    width: 100%;
+    height: 100%;
   }
 
   #historyBox .history_area {
-    display: flex;
-    justify-content: flex-start;
-    flex-wrap: nowrap;
-    width: 3500px;
-    height: 700px;
+    width: 100%;
+    height: 100%;
     margin: auto;
+    margin-top: 50px;
+  }
+  #historyBox .history_area div {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: nowrap;
+    width: 100%;
+    height: auto;
+    margin-bottom: 50px;
   }
   li {
-    width: 100%;
-    height: 400px;
-    margin-right: auto;
+    width: 400px;
+    height: 300px;
     text-align: center;
-  }
-  li dl {
-    width: 650px;
-    height: auto;
-    margin: auto;
-    margin-top: 450px;
-  }
-  li dl dt {
-    width: 300px;
-    height: 50px;
-    margin: auto;
-    line-height: 40px;
-    font-size: 18px;
-    font-weight: bold;
-  }
-  li dl dd {
-    width: 600px;
-    height: 100px;
-    margin: auto;
-    padding: 15px;
-    font-size: 14px;
-    line-height: 20px;
+    border-radius: 10px;
   }
   .history_inner_01 {
     background-image: url(../../img/hermes/history_01.jpg);
     background-repeat: no-repeat;
-    background-position: 50% 50%;
-    background-size: contain;
+    background-size: cover;
   }
 
   .history_inner_02 {
     background-image: url(../../img/hermes/history_02.jpg);
     background-repeat: no-repeat;
-    background-position: 50% 50%;
     background-size: cover;
   }
 
   .history_inner_03 {
     background-image: url(../../img/hermes/history_03.jpg);
     background-repeat: no-repeat;
-    background-position: 50% 50%;
     background-size: cover;
   }
 
@@ -1190,7 +1175,6 @@
   .history_inner_05 {
     background-image: url(../../img/hermes/history_05.jpg);
     background-repeat: no-repeat;
-    background-position: 50% 50%;
     background-size: cover;
   }
 
@@ -1198,34 +1182,31 @@
     display: block;
   }
 
-  #historyBox .indicatorBox {
-    width: 120px;
-    height: 40px;
+  #historyBox dl {
+    width: 350px;
+    height: auto;
+    margin-top: 100px;
+  }
+  #historyBox dl dt {
+    width: auto;
+    height: 50px;
     margin: auto;
-    padding: 10px;
+    line-height: 34px;
+    font-size: 16px;
+    font-weight: bold;
   }
-  #historyBox .indicatorBox ul {
-    display: flex;
-    justify-content: space-around;
-    width: 100%;
-    height: 100%;
-  }
-  #historyBox .indicatorBox li {
-    width: 12px;
-    height: 12px;
-    border-radius: 100px;
-    background-color: #505050;
-  }
-  #historyBox .indicatorBox li button {
-    display: block;
-    width: 100%;
-    height: 100%;
+  #historyBox dl dd {
+    width: 300px;
+    height: 100px;
+    font-size: 13px;
+    line-height: 20px;
+    text-align: left;
   }
 }
 @media all and (min-width: 1280px) and (max-width: 1439px) {
   #historyBox {
     width: 100%;
-    height: 1600px;
+    height: auto;
     padding-top: 170px;
   }
   #historyBox h2 {
@@ -1239,66 +1220,45 @@
     background-color: #ffffff;
   }
   .history_part {
-    width: 1200px;
-    height: 900px;
-    margin: auto;
-    overflow: hidden;
+    width: 100%;
+    height: 100%;
   }
 
   #historyBox .history_area {
-    display: flex;
-    justify-content: flex-start;
-    flex-wrap: nowrap;
-    width: 6000px;
-    height: 680px;
+    width: 100%;
+    height: 100%;
     margin: auto;
+    margin-top: 80px;
+  }
+  #historyBox .history_area div {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: nowrap;
+    width: 100%;
+    height: auto;
+    margin-bottom: 50px;
   }
   li {
-    width: 100%;
-    height: 600px;
-    margin: auto;
-    text-align: center;
-  }
-  li dl {
-    width: 750px;
-    height: auto;
-    margin: auto;
-    margin-top: 650px;
-  }
-  li dl dt {
-    width: 300px;
-    height: 50px;
-    margin: auto;
-    line-height: 40px;
-    font-size: 20px;
-    font-weight: bold;
-  }
-  li dl dd {
     width: 700px;
-    height: 100px;
-    margin: auto;
-    padding: 15px;
-    font-size: 16px;
-    line-height: 26px;
+    height: 500px;
+    text-align: center;
+    border-radius: 10px;
   }
   .history_inner_01 {
     background-image: url(../../img/hermes/history_01.jpg);
     background-repeat: no-repeat;
-    background-position: 50% 50%;
     background-size: cover;
   }
 
   .history_inner_02 {
     background-image: url(../../img/hermes/history_02.jpg);
     background-repeat: no-repeat;
-    background-position: 50% 50%;
     background-size: cover;
   }
 
   .history_inner_03 {
     background-image: url(../../img/hermes/history_03.jpg);
     background-repeat: no-repeat;
-    background-position: 50% 50%;
     background-size: cover;
   }
 
@@ -1312,7 +1272,6 @@
   .history_inner_05 {
     background-image: url(../../img/hermes/history_05.jpg);
     background-repeat: no-repeat;
-    background-position: 50% 50%;
     background-size: cover;
   }
 
@@ -1320,28 +1279,25 @@
     display: block;
   }
 
-  #historyBox .indicatorBox {
-    width: 140px;
-    height: 40px;
+  #historyBox dl {
+    width: 450px;
+    height: auto;
+    margin-top: 200px;
+  }
+  #historyBox dl dt {
+    width: auto;
+    height: 50px;
     margin: auto;
-    padding: 10px;
+    line-height: 36px;
+    font-size: 18px;
+    font-weight: bold;
   }
-  #historyBox .indicatorBox ul {
-    display: flex;
-    justify-content: space-around;
-    width: 100%;
-    height: 100%;
-  }
-  #historyBox .indicatorBox li {
-    width: 14px;
-    height: 14px;
-    border-radius: 100px;
-    background-color: #505050;
-  }
-  #historyBox .indicatorBox li button {
-    display: block;
-    width: 100%;
-    height: 100%;
+  #historyBox dl dd {
+    width: 350px;
+    height: 100px;
+    font-size: 14px;
+    line-height: 24px;
+    text-align: left;
   }
 }
 @media all and (min-width: 1440px) {
@@ -1371,69 +1327,40 @@
     margin: auto;
     margin-top: 80px;
   }
-  #historyBox .history_area .clearfix:after {
-    content: "";
-    display: block;
-    clear: both;
-  }
   #historyBox .history_area div {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: nowrap;
     width: 100%;
+    min-width: 1440px;
     height: 600px;
     margin-bottom: 50px;
-    background-color: #eee;
   }
   li {
     width: 800px;
     height: 600px;
     text-align: center;
-  }
-  li dl {
-    width: 500px;
-    height: auto;
-  }
-  li dl dt {
-    width: 300px;
-    height: 50px;
-    line-height: 40px;
-    font-size: 20px;
-    font-weight: bold;
-  }
-  li dl dd {
-    width: 400px;
-    height: 100px;
-    padding: 15px;
-    font-size: 16px;
-    line-height: 26px;
+    border-radius: 10px;
   }
   .history_inner_01 {
-    float: left;
     background-image: url(../../img/hermes/history_01.jpg);
     background-repeat: no-repeat;
-    background-position: 50% 50%;
     background-size: cover;
-  }
-  .history_inner_01 > dl {
-    float: right;
   }
 
   .history_inner_02 {
-    float: right;
     background-image: url(../../img/hermes/history_02.jpg);
     background-repeat: no-repeat;
-    background-position: 50% 50%;
     background-size: cover;
   }
 
   .history_inner_03 {
-    float: left;
     background-image: url(../../img/hermes/history_03.jpg);
     background-repeat: no-repeat;
-    background-position: 50% 50%;
     background-size: cover;
   }
 
   .history_inner_04 {
-    float: right;
     background-image: url(../../img/hermes/history_04.jpg);
     background-repeat: no-repeat;
     background-position: 50% 50%;
@@ -1441,15 +1368,34 @@
   }
 
   .history_inner_05 {
-    float: left;
     background-image: url(../../img/hermes/history_05.jpg);
     background-repeat: no-repeat;
-    background-position: 50% 50%;
     background-size: cover;
   }
 
   li a {
     display: block;
+  }
+
+  #historyBox .history_area dl {
+    width: 500px;
+    height: auto;
+    margin-top: 200px;
+  }
+  #historyBox .history_area dl dt {
+    width: auto;
+    height: 50px;
+    margin: auto;
+    line-height: 40px;
+    font-size: 20px;
+    font-weight: bold;
+  }
+  #historyBox .history_area dl dd {
+    width: 400px;
+    height: 100px;
+    font-size: 16px;
+    line-height: 26px;
+    text-align: left;
   }
 }
 @media all and (max-width: 767px) {
