@@ -998,16 +998,17 @@
   }
   .history_part {
     width: 300px;
-    height: 400px;
+    height: 600px;
     margin: 20px auto;
     overflow: hidden;
   }
 
   #historyBox .history_area {
+    transform: translateX(-300px);
     display: flex;
     justify-content: flex-start;
     flex-wrap: nowrap;
-    width: 1500px;
+    width: 1800px;
     height: 400px;
   }
   #historyBox .history_area div {
@@ -1086,7 +1087,7 @@
     width: 100px;
     height: 30px;
     margin: auto;
-    margin-top: -50px;
+    background-color: #eee;
   }
   #historyBox .indicatorBox ul {
     display: flex;
@@ -1202,6 +1203,15 @@
     line-height: 20px;
     text-align: left;
   }
+  #historyBox .indicatorBox {
+    display: block;
+    width: 0;
+    height: 0;
+    position: absolute;
+    z-index: -1;
+    clip: rect(0, 0, 0, 0);
+    overflow: hidden;
+  }
 }
 @media all and (min-width: 1280px) and (max-width: 1439px) {
   #historyBox {
@@ -1299,6 +1309,15 @@
     line-height: 24px;
     text-align: left;
   }
+  #historyBox .indicatorBox {
+    display: block;
+    width: 0;
+    height: 0;
+    position: absolute;
+    z-index: -1;
+    clip: rect(0, 0, 0, 0);
+    overflow: hidden;
+  }
 }
 @media all and (min-width: 1440px) {
   #historyBox {
@@ -1377,12 +1396,12 @@
     display: block;
   }
 
-  #historyBox .history_area dl {
+  #historyBox dl {
     width: 500px;
     height: auto;
     margin-top: 200px;
   }
-  #historyBox .history_area dl dt {
+  #historyBox dl dt {
     width: auto;
     height: 50px;
     margin: auto;
@@ -1390,12 +1409,21 @@
     font-size: 20px;
     font-weight: bold;
   }
-  #historyBox .history_area dl dd {
+  #historyBox dl dd {
     width: 400px;
     height: 100px;
     font-size: 16px;
     line-height: 26px;
     text-align: left;
+  }
+  #historyBox .indicatorBox {
+    display: block;
+    width: 0;
+    height: 0;
+    position: absolute;
+    z-index: -1;
+    clip: rect(0, 0, 0, 0);
+    overflow: hidden;
   }
 }
 @media all and (max-width: 767px) {
