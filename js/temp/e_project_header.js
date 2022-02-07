@@ -37,7 +37,7 @@ elMenuBtn03.addEventListener('click', e => {
 const elSearchBtnPart = document.querySelector('.search_btn_part');
 const elSearchBtn = elSearchBtnPart.querySelector('.search_btn');
 const elSearchTextArea = elSearchBtnPart.querySelector('.search_text_area');
-const elSearchTextInner = elSearchTextArea.querySelector('.search_text_inner');
+// const elSearchTextInner = elSearchTextArea.querySelector('.search_text_inner');
 
 elSearchBtn.addEventListener('click', e => {
   e.preventDefault();

@@ -46,7 +46,7 @@
     width: 40px;
     height: 100%;
     margin: auto;
-    background-image: url(../../img/menu.png);
+    background-image: url(../../img/menu_m.png);
     background-repeat: no-repeat;
     background-position: 50% 50%;
   }
@@ -55,15 +55,15 @@
   }
   .nav_inner01 .menu_btn_part ul {
     display: none;
-    width: 100px;
-    height: 350px;
+    width: 200px;
+    height: 420px;
     font-size: 12px;
     background-color: #F6F1EB;
   }
   .nav_inner01 .menu_btn_part ul li {
     float: left;
     z-index: 100;
-    width: 100px;
+    width: 200px;
     height: 70px;
     border-bottom: 1px solid #D9D9D9;
     font-size: 14px;
@@ -71,6 +71,9 @@
     text-transform: uppercase;
     line-height: 70px;
     color: #505050;
+  }
+  .nav_inner01 .menu_btn_part ul li:first-of-type {
+    font-weight: bold;
   }
   .nav_inner01 .menu_btn_part ul li:last-of-type {
     border-bottom: 0;
@@ -180,22 +183,21 @@
     clip: rect(0, 0, 0, 0);
     overflow: hidden;
   }
-  .login_part > dl {
-    width: 100%;
-    height: 180px;
+
+  .cart_btn_m {
+    width: 40px;
+    height: 100%;
+    background-image: url(../../img/bag_m.png);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
   }
-  .login_part dt {
+  .cart_btn_m a {
+    display: block;
     width: 100%;
-    margin-bottom: 1rem;
-    font-weight: bold;
-    font-size: 1.3em;
-    text-transform: uppercase;
-  }
-  .login_part dd {
-    width: 100%;
+    height: 100%;
   }
 
-  .nav_inner02 .about_part {
+  .about_part {
     display: block;
     width: 0;
     height: 0;
@@ -204,6 +206,7 @@
     clip: rect(0, 0, 0, 0);
     overflow: hidden;
   }
+
   .nav_inner02 a {
     display: block;
     width: 100%;
@@ -376,6 +379,15 @@
     display: block;
     width: auto;
     height: 100%;
+  }
+  .nav_inner02 .cart_btn_m {
+    display: block;
+    width: 0;
+    height: 0;
+    position: absolute;
+    z-index: -1;
+    clip: rect(0, 0, 0, 0);
+    overflow: hidden;
   }
 
   .gnb {
@@ -629,6 +641,15 @@
     width: auto;
     height: 100%;
   }
+  .nav_inner02 .cart_btn_m {
+    display: block;
+    width: 0;
+    height: 0;
+    position: absolute;
+    z-index: -1;
+    clip: rect(0, 0, 0, 0);
+    overflow: hidden;
+  }
 
   .gnb {
     width: 100%;
@@ -880,6 +901,15 @@
     width: auto;
     height: 100%;
   }
+  .nav_inner02 .cart_btn_m {
+    display: block;
+    width: 0;
+    height: 0;
+    position: absolute;
+    z-index: -1;
+    clip: rect(0, 0, 0, 0);
+    overflow: hidden;
+  }
 
   .gnb {
     width: 1440px;
@@ -983,8 +1013,9 @@
 @media all and (max-width: 767px) {
   #historyBox {
     width: 100%;
-    height: 800px;
+    height: auto;
     padding-top: 100px;
+    margin: auto;
   }
   #historyBox h2 {
     width: 100%;
@@ -997,29 +1028,34 @@
     background-color: #ffffff;
   }
   .history_part {
-    width: 300px;
-    height: 600px;
-    margin: 20px auto;
-    overflow: hidden;
+    width: 100%;
+    height: 100%;
   }
 
   #historyBox .history_area {
-    transform: translateX(-300px);
-    display: flex;
-    justify-content: flex-start;
-    flex-wrap: nowrap;
-    width: 1800px;
-    height: 400px;
+    width: 100%;
+    height: 100%;
+    margin: auto;
   }
   #historyBox .history_area div {
     width: 100%;
     height: auto;
   }
-  li {
+  #historyBox .history_area div .tab_lap_pc {
+    display: block;
+    width: 0;
+    height: 0;
+    position: absolute;
+    z-index: -1;
+    clip: rect(0, 0, 0, 0);
+    overflow: hidden;
+  }
+  #historyBox .history_area li {
     width: 100%;
     height: 200px;
-    margin-top: 30px;
+    margin-top: 50px;
     text-align: center;
+    border-radius: 10px;
   }
   .history_inner_01 {
     background-image: url(../../img/hermes/history_01.jpg);
@@ -1054,57 +1090,38 @@
     background-repeat: no-repeat;
     background-position: 50% 50%;
     background-size: cover;
+    margin-bottom: 50px;
   }
 
-  li a {
-    display: block;
+  #historyBox .mobile {
+    display: none;
     width: 100%;
-    height: 100%;
+    height: 200px;
+    margin: auto;
+    padding: 20px;
   }
-
-  #historyBox dl {
-    width: 300px;
-    height: auto;
-    margin-top: 30px;
-  }
-  #historyBox dl dt {
+  #historyBox .mobile dt {
     width: auto;
     height: 40px;
     margin: auto;
+    margin-top: 40px;
     line-height: 30px;
     font-size: 15px;
     font-weight: bold;
     text-align: center;
   }
-  #historyBox dl dd {
+  #historyBox .mobile dd {
     width: auto;
-    height: 100px;
-    font-size: 13px;
+    height: auto;
+    font-size: 12px;
     line-height: 20px;
     text-align: center;
   }
-  #historyBox .indicatorBox {
-    width: 100px;
-    height: 30px;
-    margin: auto;
-    background-color: #eee;
-  }
-  #historyBox .indicatorBox ul {
-    display: flex;
-    justify-content: space-around;
-    width: 100%;
-    height: 100%;
-  }
-  #historyBox .indicatorBox li {
-    width: 10px;
-    height: 10px;
-    border-radius: 100px;
-    background-color: #505050;
-  }
-  #historyBox .indicatorBox li button {
+  #historyBox li:hover dl {
     display: block;
-    width: 100%;
-    height: 100%;
+    background-color: rgba(80, 80, 80, 0.9);
+    color: #F5F5F5;
+    border-radius: 10px;
   }
 }
 @media all and (min-width: 768px) and (max-width: 1279px) {
@@ -1148,6 +1165,15 @@
     text-align: center;
     border-radius: 10px;
   }
+  li .mobile {
+    display: block;
+    width: 0;
+    height: 0;
+    position: absolute;
+    z-index: -1;
+    clip: rect(0, 0, 0, 0);
+    overflow: hidden;
+  }
   .history_inner_01 {
     background-image: url(../../img/hermes/history_01.jpg);
     background-repeat: no-repeat;
@@ -1179,16 +1205,12 @@
     background-size: cover;
   }
 
-  li a {
-    display: block;
-  }
-
-  #historyBox dl {
+  #historyBox .tab_lap_pc {
     width: 350px;
     height: auto;
     margin-top: 100px;
   }
-  #historyBox dl dt {
+  #historyBox .tab_lap_pc dt {
     width: auto;
     height: 50px;
     margin: auto;
@@ -1196,21 +1218,12 @@
     font-size: 16px;
     font-weight: bold;
   }
-  #historyBox dl dd {
+  #historyBox .tab_lap_pc dd {
     width: 300px;
     height: 100px;
     font-size: 13px;
     line-height: 20px;
     text-align: left;
-  }
-  #historyBox .indicatorBox {
-    display: block;
-    width: 0;
-    height: 0;
-    position: absolute;
-    z-index: -1;
-    clip: rect(0, 0, 0, 0);
-    overflow: hidden;
   }
 }
 @media all and (min-width: 1280px) and (max-width: 1439px) {
@@ -1254,6 +1267,15 @@
     text-align: center;
     border-radius: 10px;
   }
+  li .mobile {
+    display: block;
+    width: 0;
+    height: 0;
+    position: absolute;
+    z-index: -1;
+    clip: rect(0, 0, 0, 0);
+    overflow: hidden;
+  }
   .history_inner_01 {
     background-image: url(../../img/hermes/history_01.jpg);
     background-repeat: no-repeat;
@@ -1285,16 +1307,12 @@
     background-size: cover;
   }
 
-  li a {
-    display: block;
-  }
-
-  #historyBox dl {
+  #historyBox .tab_lap_pc {
     width: 450px;
     height: auto;
     margin-top: 200px;
   }
-  #historyBox dl dt {
+  #historyBox .tab_lap_pc dt {
     width: auto;
     height: 50px;
     margin: auto;
@@ -1302,21 +1320,12 @@
     font-size: 18px;
     font-weight: bold;
   }
-  #historyBox dl dd {
+  #historyBox .tab_lap_pc dd {
     width: 350px;
     height: 100px;
     font-size: 14px;
     line-height: 24px;
     text-align: left;
-  }
-  #historyBox .indicatorBox {
-    display: block;
-    width: 0;
-    height: 0;
-    position: absolute;
-    z-index: -1;
-    clip: rect(0, 0, 0, 0);
-    overflow: hidden;
   }
 }
 @media all and (min-width: 1440px) {
@@ -1361,6 +1370,15 @@
     text-align: center;
     border-radius: 10px;
   }
+  li .mobile {
+    display: block;
+    width: 0;
+    height: 0;
+    position: absolute;
+    z-index: -1;
+    clip: rect(0, 0, 0, 0);
+    overflow: hidden;
+  }
   .history_inner_01 {
     background-image: url(../../img/hermes/history_01.jpg);
     background-repeat: no-repeat;
@@ -1392,16 +1410,12 @@
     background-size: cover;
   }
 
-  li a {
-    display: block;
-  }
-
-  #historyBox dl {
+  #historyBox .tab_lap_pc {
     width: 500px;
     height: auto;
     margin-top: 200px;
   }
-  #historyBox dl dt {
+  #historyBox .tab_lap_pc dt {
     width: auto;
     height: 50px;
     margin: auto;
@@ -1409,21 +1423,12 @@
     font-size: 20px;
     font-weight: bold;
   }
-  #historyBox dl dd {
+  #historyBox .tab_lap_pc dd {
     width: 400px;
     height: 100px;
     font-size: 16px;
     line-height: 26px;
     text-align: left;
-  }
-  #historyBox .indicatorBox {
-    display: block;
-    width: 0;
-    height: 0;
-    position: absolute;
-    z-index: -1;
-    clip: rect(0, 0, 0, 0);
-    overflow: hidden;
   }
 }
 @media all and (max-width: 767px) {
