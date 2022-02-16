@@ -1,5 +1,5 @@
 // e_02_project_main.js
-// window.alert('교육 목적으로 제작된 웹페이지입니다.')
+window.alert('교육 목적으로 제작된 웹페이지입니다.')
 
 
 // ------------------------------------------------------------------
@@ -23,7 +23,7 @@ fetch(headerData)
 // contentBox_02 슬라이드 
 
 const setDevice = [
-  {type:'mobile', size:'767', script:'../js/temp/e_project_contentBox_02_m_slide.js'}, // tablet과 mobile의 JS가 같아서 통합
+  {type:'mobile', size:'767', script:'../js/temp/e_project_contentBox_02_m_slide.js'},
   {type:'pc', script:'../js/temp/e_project_contentBox_02_tlp_slide.js'}
 ]
 const mediaSize = `screen and (max-width:${setDevice[0].size}px)`
